@@ -1,0 +1,12 @@
+body {
+    background-color:cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+ul {
+    width: 50vw;
+    margin: 30px auto;
+    padding: 20px;
+    list-style-type: none;
+}

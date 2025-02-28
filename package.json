@@ -1,0 +1,20 @@
+{
+  "name": "3q_4gsodiumsorino",
+  "version": "0.1.0",
+  "description": "Sorino 4th graded",
+  "keywords": [
+    "node",
+    "form"
+  ],
+  "license": "MIT",
+  "author": "Raphael Caleb S. Sorino",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "hbs": "^4.2.0"
+  }
+}

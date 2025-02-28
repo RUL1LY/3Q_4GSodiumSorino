@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/resultStyle.css">
+</head>
+<body>
+  <h1>Form Submission Result</h1>
+  <p>Thank you, {{name}}, for submitting the form!</p>
+  <br>
+  <br>
+  <h2>Your Answers</h2>
+  <ul>
+    {{#each formData}}
+      <li><strong>{{@key}}:</strong> {{this}}</li>
+    {{/each}}
+  </ul>
+</body>
+</html>

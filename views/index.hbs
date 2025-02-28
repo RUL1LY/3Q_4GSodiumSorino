@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/hbsStyle.css">
+</head>
+<body>
+  <h1>{{message}}</h1>
+  <form id='signUpForm' action="/submit" method="post" onsubmit="return confirm('Are you sure you want to submit?');" onreset="return confirm('Are you sure you want to reset?');">
+
+  <fieldset>
+    <legend>Student Information</legend>
+    <div>
+        <label for="studentID">Student ID:</label>
+        <input type="tel" id="studentID" name="studentID" placeholder="XX-XXXX-XXX" pattern="[0-9]{2}-[0-9]{4}-[0-9]{3}" onblur="markEmpty(this)" required>
+    </div>
+
+    <div>   
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" onblur="markEmpty(this)" required>
+    </div>
+
+    <div>   
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" onblur="markEmpty(this)" required>
+    </div>
+
+    <div>   
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" onblur="markEmpty(this)" required>
+    </div>
+
+    </fieldset>
+
+    <fieldset>
+    <legend>Additional Information</legend>
+    <div>
+        <label for="phoneNumber">Mobile Phone</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" onblur="markEmpty(this)" required>
+    </div>
+
+    <div>
+        <label for="gradeLevel">Grade Level:</label>
+        <select id="gradeLevel" name="gradeLevel" onblur="markEmpty(this)" required>
+          <option value="" disabled selected>Choose...</option>
+          <option value="7">Grade 7</option>
+          <option value="8">Grade 8</option>
+          <option value="9">Grade 9</option>
+          <option value="10">Grade 10</option>
+          <option value="11">Grade 11</option>
+          <option value="12">Grade 12</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Dormer/Extern</label>
+        <div class="radio-group">
+            <label>Dormer<input type="radio" name="dormer" value="dormer"></label>
+            <label>Extern<input type="radio" name="dormer" value="extern"></label>
+        </div>
+    </div>
+
+    <div>
+    <label for="cluborganization">Preferred Club / Organization</label>
+        <select id = "cluborganization" name="cluborganization" onblur="markEmpty(this)" required>
+            <option value="" disabled selected>Choose...</option> 
+            <option value="Frisbee">Disc Club (Frisbee)</option>
+            <option value="Volleyball">The Spike (Volleyball)</option>
+            <option value="Basketball">Hoopers (Basketball)</option>
+            <option value="Coding">YMSAT '25-'26 Preparation</option>
+            <option value="Affairs">Student Affairs</option>
+        </select>
+    </div>
+
+    </fieldset>
+
+    <fieldset>
+    <legend>Reason for Joining</legend>
+    <div>
+        <label for="reason">Why do you want to join?</label>
+        <textarea id="reason" name="reason" rows="4" cols="50" onblur="markEmpty(this)" required></textarea>
+    </div>
+    </fieldset>
+    <div id="buttons">
+        <button id="submit" type="submit">Submit</button> <button id='reset' type="reset" class="reset-button">Reset Form</button>
+    </div>
+  </form>
+  <script src="/js/indexScript.js"></script>
+</body>
+</html>
