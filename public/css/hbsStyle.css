@@ -29,8 +29,8 @@ input, select, textarea {
 
 .radio-group {
     display: flex;
-    gap: 20px; /* Adjust spacing between radio buttons */
-    justify-content: center; /* Centers them horizontally */
+    gap: 20px; 
+    justify-content: center; 
     align-items: center;
 }
 
@@ -92,15 +92,15 @@ button {
 input:focus, textarea:focus, select:focus {
     border: 2px solid black;
     background-color: antiquewhite;
-    outline: none; /* Removes default outline */
+    outline: none; 
 }
 
 fieldset {
-    border: 2px solid #d4af37; /* Gold border */
-    border-radius: 10px; /* Smooth rounded corners */
+    border: 2px solid #d4af37;
+    border-radius: 10px; 
     padding: 15px;
     margin: 15px 0;
-    background-color: cornsilk; /* Soft yellow background */
+    background-color: cornsilk;
 }
 
 legend {
@@ -108,7 +108,7 @@ legend {
     color: #333;
     font-size: 1.2em;
     padding: 5px 10px;
-    background-color: #d4af37; /* Gold background */
+    background-color: #d4af37;
     border-radius: 5px;
     color: white;
 }
